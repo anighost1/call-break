@@ -1,0 +1,120 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem;
+  min-height: 100vh;
+  font-size: 2rem;
+}
+
+.main h1{
+    color: #867070;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px red solid; */
+    width: 90vw;
+}
+
+.btn{
+    height: 4rem;
+    width: 13rem;
+    background-color: #D5B4B4;
+    color: #F5EBEB;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    transition: 150ms;
+}
+.btn:hover{
+    scale: 0.98;
+}
+
+
+
+
+
+/* style for player card */
+.pcContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px #E4D0D0 solid;
+    height: 300px;
+    width: max(20%,250px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #E4D0D0;
+    transition: 150ms;
+    box-shadow:0px 5px 10px 0px #867070;
+}
+
+.pcContainer:hover{
+    scale:1.01;
+}
+
+.pcContainer h4{
+    color: #d09494;
+}
+.pcContainer h5{
+    color: #d09494;
+}
+.pcContainer h6{
+    color: #d09494;
+}
+
+.pcContainer input{
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    background-color: #F5EBEB;
+    text-align: center;
+    color: #d09494;
+}
+.pcContainer input:focus{
+    outline: none;
+    border: 1px solid #d09494;
+}
+
+
+
+
+
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .cards{
+    flex-direction: column;
+  }
+
+  .pcContainer{
+    height: 250px;
+  }
+}
+
+
+
+/* Mobile device */
+@media (min-width: 100px) and (max-width: 768px) {
+    .cards{
+      flex-direction: column;
+    }
+
+    .main h1{
+        font-size:3rem;
+    }
+
+    .pcContainer{
+        height: 250px;
+      }
+  }
+
